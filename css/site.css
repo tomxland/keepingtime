@@ -1,24 +1,5 @@
-/* center loading gif and make it the top of the display */
-#loading {
-    position: absolute;
-    z-index: 99999;
-    vertical-align: middle;
-    display: none;
-    width: 128px;
-    height: 78px;
-    border: none;
-} 
-
-#error-msg {
-	display: none;
-}
-
-#results {
-	display: none;
-}
-
-.form-control {
-	margin-bottom: 5px !important;
+body {
+    background-color: #333;
 }
 
 a {
@@ -29,13 +10,39 @@ a:hover {
 	color: #d2322d
 }
 
-body {
-    background-color: #333;
-}
-
 label {
     color : #999;
 }
+
+
+
+/*** Padding and sizing ***/
+
+h1 {
+	margin-top: 0px;
+}
+
+.form-control {
+	margin-bottom: 5px !important;
+}
+
+.canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*** Pie Chart Legend ***/
+
+.legend {
+    margin-top: 20px;
+}
+
+.legend > span {
+    vertical-align: middle;
+}
+
 
 .box {
     border-radius: 2px;
@@ -53,15 +60,23 @@ label {
     background-color: #E0E4CC;
 }
 
-.legend {
-    margin-top: 20px;
-}
 
-.legend > span {
+
+/*** Element specific formatting ***/
+#loading {
+    position: absolute;
+    z-index: 99999;
     vertical-align: middle;
+    display: none;
+    width: 128px;
+    height: 78px;
+    border: none;
+} 
+
+#error-msg {
+	display: none;
 }
 
-.canvas {
-    max-width: 100%;
-    height: auto;
+#results {
+	display: none;
 }
