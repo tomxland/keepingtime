@@ -17,6 +17,10 @@
 	display: none;
 }
 
+.form-control {
+	margin-bottom: 5px !important;
+}
+
 a {
 	color: #d9534f
 }
