@@ -125,7 +125,13 @@ KeepTime =
 
             for (var num in tracks)
             {
-                KeepTime.user.totalTime += tracks[num].playcount * tracks[num].duration;
+            	var time = tracks[num].playcount * tracks[num].duration;
+            	
+            	// Error handling for tracks without play count or duration
+            	if (!isNaN(time))
+            	{
+            		KeepTime.user.totalTime += time;
+            	}
             }
 
             var attr = data.toptracks['@attr'];
