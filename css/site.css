@@ -22,13 +22,13 @@ h1 {
 	margin-top: 0px;
 }
 
-.form-control {
-	margin-bottom: 5px !important;
+canvas {
+    max-width: 100%;
+    height: auto !important;
 }
 
-.canvas {
-    max-width: 100%;
-    height: auto;
+.form-control {
+	margin-bottom: 5px !important;
 }
 
 
